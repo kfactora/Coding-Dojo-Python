@@ -1,1 +1,1 @@
-# coding-dojo-python-fundamentals
+# coding-dojo-python
