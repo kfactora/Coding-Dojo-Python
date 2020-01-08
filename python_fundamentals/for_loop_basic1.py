@@ -1,3 +1,8 @@
+# Assignment: For Loops: Basic I
+# Objectives:
+# Learn how to use basic for loop statements in Python
+# Practice some basic algorithms in Python
+
 # 1. Basic - Print all integers from 0 to 150.
 for x in range(0, 151, 1):
   print(x)
