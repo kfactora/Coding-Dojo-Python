@@ -1,3 +1,8 @@
+#Assignment: Functions Basic I
+#Objectives:
+#Avoid common mistakes of using functions
+#Really understand how to use T-diagram to correctly predict and debug codes
+
 #1
 def a():
   return 5
