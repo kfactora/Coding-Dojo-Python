@@ -31,6 +31,5 @@ monty = User("Monty Python", "monty@python.com")
 
 guido.make_deposit(200)
 guido.make_withdrawal(100)
-# print(guido.name)
-# print(guido.account_balance)
-guido.display_balance
+guido.display_balance()
+monty.display_balance()
