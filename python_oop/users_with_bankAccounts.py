@@ -1,3 +1,3 @@
 Assignment: Users with Bank Accounts
 Objectives:
-# Practice writing classes with associations
+Practice writing classes with associations
