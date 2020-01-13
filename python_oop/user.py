@@ -17,10 +17,13 @@ class User:
     self.email = email
     self.account_balance = 0
   
-  def make_deposit(self, amount):	
+  def make_deposit(self, amount):
     self.account_balance += amount
+    return self
+  
   def make_withdrawal(self, amount):	
     self.account_balance -= amount
+    return self
 
   def display_balance(self):	
     print("Name:",self.name)
@@ -30,19 +33,8 @@ guido = User("Guido van Rossum", "guido@python.com")
 monty = User("Monty Python", "monty@python.com")
 luke = User("Luke Skywalker", "luke@python.com")
 
-guido.make_deposit(100)
-guido.make_deposit(200)
-guido.make_deposit(300)
-guido.make_withdrawal(100)
-guido.display_balance()
+guido.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawal(100).display_balance()
 
-monty.make_deposit(100)
-monty.make_deposit(100)
-monty.make_withdrawal(100)
-monty.display_balance()
+monty.make_deposit(100).make_deposit(100).make_withdrawal(100).display_balance()
 
-luke.make_deposit(500)
-luke.make_withdrawal(100)
-luke.make_withdrawal(100)
-luke.make_withdrawal(100)
-luke.display_balance()
+luke.make_deposit(500).make_withdrawal(100).make_withdrawal(100).make_withdrawal(100).display_balance()
