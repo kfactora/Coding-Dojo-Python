@@ -34,7 +34,5 @@ monty = User("Monty Python", "monty@python.com")
 luke = User("Luke Skywalker", "luke@python.com")
 
 guido.make_deposit(100).make_deposit(200).make_deposit(300).make_withdrawal(100).display_balance()
-
 monty.make_deposit(100).make_deposit(100).make_withdrawal(100).display_balance()
-
 luke.make_deposit(500).make_withdrawal(100).make_withdrawal(100).make_withdrawal(100).display_balance()
