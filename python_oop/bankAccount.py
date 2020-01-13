@@ -9,25 +9,26 @@
 # display_account_info(self) - print to the console: eg. "Balance: $100"
 # yield_interest(self) - increases the account balance by the current balance * the interest rate (as long as the balance is positive)
 
-class BankAccount:
-	def __init__(self, int_rate, balance):
-    self.int_rate = 0
+class Bank:
+  def __init__(self, int_rate, balance):
+    self.int_rate = int_rate
     self.balance = 0
     
-	def deposit(self, amount):
+  def deposit(self, amount):
     self.balance += amount
     return self
   
-	def withdraw(self, amount):
-    self.balance -= amount
-    return self
+	# def withdraw(self, amount):
+  #   self.balance -= amount
+  #   return self
   
-	def display_account_info(self):
+  def display_account_info(self):
     print("Balance:", "$", self.balance)    
     
-	def yield_interest(self):
-    self.balance * self.int_rate == amount
-    return self
-  
-  account1 = Bank("0.5")
+	# def yield_interest(self):
+  #   self.balance * self.int_rate == amount
+  #   return self
+
+  bank1 = Bank(.10)
+  bank1.deposit(100).display_account_info
 
