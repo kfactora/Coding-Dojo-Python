@@ -6,3 +6,8 @@ class User:
     self.name = name
   def say_hello(self):
     return "hello"
+  
+print(square(5))
+user = User("Anna")
+print(user.name)
+print(user.say_hello())
