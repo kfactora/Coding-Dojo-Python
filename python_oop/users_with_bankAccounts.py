@@ -8,9 +8,18 @@ class User:
     self.email = email
     self.account = BankAccount(int_rate=0.02, balance=0)
   
-  def example_method(self, amount):
+  def make_deposit(self, amount):
     self.account.deposit(amount)	
-    print(self.account.balance)
+    #print(self.account.balance)
+    return self
+  
+  def make_withdraw(self, amount):
+    self.account.withdraw(amount)	
+    #print(self.account.balance)
+    return self
+  
+  def display_user_balance(self):
+    print("Balance:", "$", self.account.balance)
     return self
  
 class BankAccount:
@@ -21,6 +30,10 @@ class BankAccount:
   def deposit(self, amount):
     self.balance += amount
     return self
+  
+  def withdraw(self, amount):
+    self.balance -= amount
+    return self
 
 guido = User("Guido van Rossum", "guido@python.com")
-guido.example_method(100)
+guido.make_deposit(100).make_withdraw(50).display_user_balance()
